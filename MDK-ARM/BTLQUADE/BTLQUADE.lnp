@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"btlquade\startup_stm32f103xb.o"
+"btlquade\lcd1602.o"
+"btlquade\relay.o"
+"btlquade\sensor.o"
+"btlquade\main.o"
+"btlquade\stm32f1xx_it.o"
+"btlquade\stm32f1xx_hal_msp.o"
+"btlquade\stm32f1xx_hal_gpio_ex.o"
+"btlquade\stm32f1xx_hal_adc.o"
+"btlquade\stm32f1xx_hal_adc_ex.o"
+"btlquade\stm32f1xx_hal.o"
+"btlquade\stm32f1xx_hal_rcc.o"
+"btlquade\stm32f1xx_hal_rcc_ex.o"
+"btlquade\stm32f1xx_hal_gpio.o"
+"btlquade\stm32f1xx_hal_dma.o"
+"btlquade\stm32f1xx_hal_cortex.o"
+"btlquade\stm32f1xx_hal_pwr.o"
+"btlquade\stm32f1xx_hal_flash.o"
+"btlquade\stm32f1xx_hal_flash_ex.o"
+"btlquade\stm32f1xx_hal_exti.o"
+"btlquade\system_stm32f1xx.o"
+--strict --scatter "BTLQUADE\BTLQUADE.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BTLQUADE.map" -o BTLQUADE\BTLQUADE.axf
